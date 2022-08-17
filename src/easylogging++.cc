@@ -29,38 +29,37 @@ namespace consts {
 
 // Level log values - These are values that are replaced in place of %level format specifier
 // Extra spaces after format specifiers are only for readability purposes in log files
-static const base::type::char_t* kInfoLevelLogValue     =   ELPP_LITERAL("INFO");
-static const base::type::char_t* kDebugLevelLogValue    =   ELPP_LITERAL("DEBUG");
-static const base::type::char_t* kWarningLevelLogValue  =   ELPP_LITERAL("WARNING");
-static const base::type::char_t* kErrorLevelLogValue    =   ELPP_LITERAL("ERROR");
-static const base::type::char_t* kFatalLevelLogValue    =   ELPP_LITERAL("FATAL");
-static const base::type::char_t* kVerboseLevelLogValue  =
-  ELPP_LITERAL("VERBOSE"); // will become VERBOSE-x where x = verbose level
-static const base::type::char_t* kTraceLevelLogValue    =   ELPP_LITERAL("TRACE");
-static const base::type::char_t* kInfoLevelShortLogValue     =   ELPP_LITERAL("I");
-static const base::type::char_t* kDebugLevelShortLogValue    =   ELPP_LITERAL("D");
-static const base::type::char_t* kWarningLevelShortLogValue  =   ELPP_LITERAL("W");
-static const base::type::char_t* kErrorLevelShortLogValue    =   ELPP_LITERAL("E");
-static const base::type::char_t* kFatalLevelShortLogValue    =   ELPP_LITERAL("F");
-static const base::type::char_t* kVerboseLevelShortLogValue  =   ELPP_LITERAL("V");
-static const base::type::char_t* kTraceLevelShortLogValue    =   ELPP_LITERAL("T");
+static const base::type::char_t* kInfoLevelLogValue    = ELPP_LITERAL("INFO");
+static const base::type::char_t* kDebugLevelLogValue   = ELPP_LITERAL("DEBG");
+static const base::type::char_t* kWarningLevelLogValue = ELPP_LITERAL("WARN");
+static const base::type::char_t* kErrorLevelLogValue   = ELPP_LITERAL("ERRR");
+static const base::type::char_t* kFatalLevelLogValue   = ELPP_LITERAL("FATL");
+static const base::type::char_t* kVerboseLevelLogValue = ELPP_LITERAL("VERB"); // will become VERBOSE-x where x = verbose level
+static const base::type::char_t* kTraceLevelLogValue   = ELPP_LITERAL("TRCE");
+static const base::type::char_t* kInfoLevelShortLogValue    = ELPP_LITERAL("I");
+static const base::type::char_t* kDebugLevelShortLogValue   = ELPP_LITERAL("D");
+static const base::type::char_t* kWarningLevelShortLogValue = ELPP_LITERAL("W");
+static const base::type::char_t* kErrorLevelShortLogValue   = ELPP_LITERAL("E");
+static const base::type::char_t* kFatalLevelShortLogValue   = ELPP_LITERAL("F");
+static const base::type::char_t* kVerboseLevelShortLogValue = ELPP_LITERAL("V");
+static const base::type::char_t* kTraceLevelShortLogValue   = ELPP_LITERAL("T");
 // Format specifiers - These are used to define log format
-static const base::type::char_t* kAppNameFormatSpecifier          =      ELPP_LITERAL("%app");
-static const base::type::char_t* kLoggerIdFormatSpecifier         =      ELPP_LITERAL("%logger");
-static const base::type::char_t* kThreadIdFormatSpecifier         =      ELPP_LITERAL("%thread");
-static const base::type::char_t* kSeverityLevelFormatSpecifier    =      ELPP_LITERAL("%level");
-static const base::type::char_t* kSeverityLevelShortFormatSpecifier    =      ELPP_LITERAL("%levshort");
-static const base::type::char_t* kDateTimeFormatSpecifier         =      ELPP_LITERAL("%datetime");
-static const base::type::char_t* kLogFileFormatSpecifier          =      ELPP_LITERAL("%file");
-static const base::type::char_t* kLogFileBaseFormatSpecifier      =      ELPP_LITERAL("%fbase");
-static const base::type::char_t* kLogLineFormatSpecifier          =      ELPP_LITERAL("%line");
-static const base::type::char_t* kLogLocationFormatSpecifier      =      ELPP_LITERAL("%loc");
-static const base::type::char_t* kLogFunctionFormatSpecifier      =      ELPP_LITERAL("%func");
-static const base::type::char_t* kCurrentUserFormatSpecifier      =      ELPP_LITERAL("%user");
-static const base::type::char_t* kCurrentHostFormatSpecifier      =      ELPP_LITERAL("%host");
-static const base::type::char_t* kMessageFormatSpecifier          =      ELPP_LITERAL("%msg");
-static const base::type::char_t* kVerboseLevelFormatSpecifier     =      ELPP_LITERAL("%vlevel");
-static const char* kDateTimeFormatSpecifierForFilename            =      "%datetime";
+static const base::type::char_t* kAppNameFormatSpecifier            = ELPP_LITERAL("%app");
+static const base::type::char_t* kLoggerIdFormatSpecifier           = ELPP_LITERAL("%logger");
+static const base::type::char_t* kThreadIdFormatSpecifier           = ELPP_LITERAL("%thread");
+static const base::type::char_t* kSeverityLevelFormatSpecifier      = ELPP_LITERAL("%level");
+static const base::type::char_t* kSeverityLevelShortFormatSpecifier = ELPP_LITERAL("%levshort");
+static const base::type::char_t* kDateTimeFormatSpecifier           = ELPP_LITERAL("%datetime");
+static const base::type::char_t* kLogFileFormatSpecifier            = ELPP_LITERAL("%file");
+static const base::type::char_t* kLogFileBaseFormatSpecifier        = ELPP_LITERAL("%fbase");
+static const base::type::char_t* kLogLineFormatSpecifier            = ELPP_LITERAL("%line");
+static const base::type::char_t* kLogLocationFormatSpecifier        = ELPP_LITERAL("%loc");
+static const base::type::char_t* kLogFunctionFormatSpecifier        = ELPP_LITERAL("%func");
+static const base::type::char_t* kCurrentUserFormatSpecifier        = ELPP_LITERAL("%user");
+static const base::type::char_t* kCurrentHostFormatSpecifier        = ELPP_LITERAL("%host");
+static const base::type::char_t* kMessageFormatSpecifier            = ELPP_LITERAL("%msg");
+static const base::type::char_t* kVerboseLevelFormatSpecifier       = ELPP_LITERAL("%vlevel");
+static const char* kDateTimeFormatSpecifierForFilename              = "%datetime";
 // Date/time
 static const char* kDays[7]                         =      { "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday" };
 static const char* kDaysAbbrev[7]                   =      { "Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat" };

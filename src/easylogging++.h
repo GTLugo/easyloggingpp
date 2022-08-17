@@ -14,6 +14,9 @@
 //  http://muflihun.com
 //
 
+#define ELPP_THREAD_SAFE 1
+#define ELPP_NO_DEFAULT_LOG_FILE 1
+
 #ifndef EASYLOGGINGPP_H
 #define EASYLOGGINGPP_H
 // Compilers and C++0x/C++11 Evaluation
